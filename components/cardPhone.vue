@@ -109,10 +109,10 @@ export default {
   methods: {
     addHouse() {
       if (this.saved === false) {
-        this.$store.dispatch('savedHouses/getHouse', this.id)
+        this.$store.dispatch('savedHouses/getHouse', this.house)
         this.saved = true
       } else {
-        this.$store.commit('savedHouses/REM_SAVED_HOUSE', this.id)
+        this.$store.commit('savedHouses/REM_SAVED_HOUSE', this.house)
         this.saved = false
       }
     },

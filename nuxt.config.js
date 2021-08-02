@@ -89,4 +89,5 @@ export default {
   build: {
     transpile: ['vee-validate'],
   },
+  target: 'static',
 }
